@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid black',
 
     [theme.breakpoints.down('xs')]: {
-      width: '90%'
+      width: '90%',
+      marginBottom: '10px'
     },
   },
   wrapper: {
