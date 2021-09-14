@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme)=> ({
         border: '2px solid black',
         margin: '10px',
         [theme.breakpoints.down('xs')]: {
-            width: '120px',
+            width: '100px',
             padding: '5px',
             margin: '10px',
             border: 'none'
@@ -58,7 +58,7 @@ const VideoPlayer = () => {
                 </Paper>
             )}
             { callAccepted && !callEnded && (
-              <Paper onClick={()=> {setResizeCam(prev => !prev)}} className={resizeCam ? classes.paper: classes.small}>
+              <Paper className={classes.paper}>
                 <Grid item xs={12} md={6}>
                     <Typography variant='h5' className={classes.h5} gutterBottom>{call.name || 'Name'}</Typography>
                     <video playsInline ref={userVideo} autoPlay className={classes.video} />
