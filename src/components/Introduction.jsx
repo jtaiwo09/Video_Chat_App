@@ -43,7 +43,10 @@ const useStyles = makeStyles((theme)=> ({
     },
     rightText: {
         fontSize: 20,
-        lineHeight: '30px'
+        lineHeight: '30px',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 14,
+        }
     }, 
     arrowDown: {
         width: '50px',
@@ -58,7 +61,11 @@ const useStyles = makeStyles((theme)=> ({
         backgroundColor: 'black',
         color: 'white',
         cursor: 'pointer',
-        animation: `$bounce 1s infinite alternate ${theme.transitions.easing.easeInOut}`
+        animation: `$bounce 1s infinite alternate ${theme.transitions.easing.easeInOut}`,
+        [theme.breakpoints.down('xs')]: {
+            width: '30px',
+            height: '30px'
+        }
     },
     "@keyframes bounce": {
         '0%': {
