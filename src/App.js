@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { createRef, useRef } from 'react';
 import { AppBar, Typography } from '@material-ui/core';
 import VideoPlayer from './components/VideoPlayer';
 import Options from './components/Options';
 import Notifications from './components/Notifications';
 import {makeStyles} from '@material-ui/core/styles';
+import Home from './components/Home';
+import Introduction from './components/Introduction';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -38,12 +40,11 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.wrapper}>
-      <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography className={classes.h2} variant="h2" align="center">Video Chat</Typography>
-      </AppBar>
+      <Home />
+      <Introduction/>
       <VideoPlayer />
       <Options>
-        <Notifications />
+          <Notifications />
       </Options>
     </div>
   );

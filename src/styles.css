@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,9 @@
 body {
   /* background-color: #19a0d8; */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://i.pinimg.com/originals/e4/1c/63/e41c63e4355e159f4c772952f71b2d13.jpg");
+    url("https://cdn2.hubspot.net/hubfs/202339/canvas/images/parallax/Website-Design-Background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
 }
