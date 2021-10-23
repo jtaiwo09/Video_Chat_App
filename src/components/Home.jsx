@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Logo from '../images/webcam.png';
-import { Button, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme)=> ({
     homeWrapper: {
@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme)=> ({
     },
     btn : {
         marginTop: '20px',
-        border: 'none',
         backgroundColor: 'transparent',
         color: '#fff',
         cursor: 'pointer',

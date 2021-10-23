@@ -1,5 +1,4 @@
-import React, { createRef, useRef } from 'react';
-import { AppBar, Typography } from '@material-ui/core';
+import React from 'react';
 import VideoPlayer from './components/VideoPlayer';
 import Options from './components/Options';
 import Notifications from './components/Notifications';
